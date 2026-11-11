@@ -1,0 +1,1 @@
+const fs=require('node:fs');const sharp=require("C:/Users/GenaComp/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/sharp");(async()=>{const svg=fs.readFileSync('dist/icon.svg');for(const size of [192,512])await sharp(svg).resize(size,size).png().toFile('dist/icon-'+size+'.png');})();
